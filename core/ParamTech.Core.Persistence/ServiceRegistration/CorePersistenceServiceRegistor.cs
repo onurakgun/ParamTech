@@ -11,7 +11,6 @@ namespace ParamTech.Core.Persistence.ServiceRegistration
     {
         public void Load(IServiceCollection services)
         {
-            var Configuration = RedisConfigurations.Configuration();
             services.AddSingleton<IRedisConnection, RedisConnection>();
             services.AddSingleton<ICacheManager, RedisCacheManager>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

@@ -3,7 +3,15 @@
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
+	  <LangVersion>preview</LangVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\ParamTech.Core.Persistence\ParamTech.Core.Persistence.csproj" />
+    <ProjectReference Include="..\..\ParamTech.Domain\ParamTech.Domain.csproj" />
+    <ProjectReference Include="..\ParamTech.Application\ParamTech.Application.csproj" />
+    <ProjectReference Include="..\ParamTech.Persistence\ParamTech.Persistence.csproj" />
+  </ItemGroup>
 
 </Project>

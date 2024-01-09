@@ -1,9 +1,35 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<LangVersion>preview</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Folder Include="Features\Users\Commands\Create\UserInsetList\Handlers\" />
+	  <Folder Include="Features\Users\Commands\Create\UserInsetList\Request\" />
+	  <Folder Include="Features\Users\Commands\Create\UserInsetList\Responses\" />
+	  <Folder Include="Features\Users\Commands\Delete\" />
+	  <Folder Include="Features\Users\Commands\Update\" />
+	  <Folder Include="Features\Users\Constants\" />
+	  <Folder Include="Features\Users\Queries\" />
+	  <Folder Include="Features\Users\Rules\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="AutoMapper" Version="12.0.1" />
+	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+	  <PackageReference Include="MediatR" Version="12.2.0" />
+	  <PackageReference Include="MethodBoundaryAspect.Fody" Version="2.0.149" />
+	  <PackageReference Include="MrAdvice" Version="2.14.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\core\ParamTech.Core.Persistence\ParamTech.Core.Persistence.csproj" />
+	  <ProjectReference Include="..\..\ParamTech.Domain\ParamTech.Domain.csproj" />
+	  <ProjectReference Include="..\ParamTech.Dtos\ParamTech.Dtos.csproj" />
+	</ItemGroup>
 
 </Project>
