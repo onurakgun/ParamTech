@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34302.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{BB71D8AB-40D1-437E-8945-CFCA170E63C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F75DD5AF-608B-494B-BBCC-3A19C7840B6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "uı", "uı", "{44D7AC5B-F50C-4E10-856C-CB55D7E7191D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParamTech.Core.Application", "core\ParamTech.Core.Application\ParamTech.Core.Application.csproj", "{42535E28-6002-4B31-B559-829203ABDCD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42535E28-6002-4B31-B559-829203ABDCD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42535E28-6002-4B31-B559-829203ABDCD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42535E28-6002-4B31-B559-829203ABDCD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42535E28-6002-4B31-B559-829203ABDCD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{42535E28-6002-4B31-B559-829203ABDCD8} = {BB71D8AB-40D1-437E-8945-CFCA170E63C9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33A06239-F711-40EC-A512-082899B5CF55}
+	EndGlobalSection
+EndGlobal
